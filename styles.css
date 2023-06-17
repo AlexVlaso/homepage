@@ -140,11 +140,16 @@ body {
   width: 35px;
   margin-right: 10px;
 }
-.intro {
+.intro__wrapper {
   display: flex;
   justify-content: start;
 }
-
+.intro__header {
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+  text-decoration-color: var(--text-decoration-color);
+  text-align: center;
+}
 .intro__icon-wrapper {
   margin-right: 30px;
   width: 30px;
