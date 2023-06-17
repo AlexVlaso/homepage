@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
 
   --primary-text-color: #ff9a00;
-  --secondary-text-color: #5c5c62;
+  --secondary-text-color: #85858b;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
@@ -133,7 +133,7 @@ body {
   align-items: center;
 }
 .contact-info__block-text {
-  color: #6a737d;
+  color: var(--secondary-text-color);
   text-decoration: none;
 }
 .contact-info__block-img {
@@ -170,14 +170,31 @@ body {
   color: var(--secondary-text-color);
   text-align: justify;
 }
-
 .skills__header {
+  color: var(--primary-text-color);
+  text-decoration-color: var(--text-decoration-color);
+  text-align: center;
+}
+.skills__subheader {
   color: var(--secondary-text-color);
   text-align: center;
+  font-size: 16px;
   margin-bottom: 15px;
 }
-
-.skills__text {
+.skills__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills__item {
+  margin: 10px 10px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: gray;
+  box-shadow: 2px 4px 10px 0px rgba(255, 200, 0, 0.7);
+}
+.skills__item-desc {
   color: var(--secondary-text-color);
   text-align: justify;
 }
