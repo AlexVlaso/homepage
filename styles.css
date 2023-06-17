@@ -114,6 +114,32 @@ body {
   border-radius: 10px;
   background-color: #ff9a00;
 }
+.contact-info__header {
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+  text-decoration-color: var(--text-decoration-color);
+  text-align: center;
+}
+.contact_info_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  justify-items: center;
+}
+
+.contact-info__block-item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.contact-info__block-text {
+  color: #6a737d;
+  text-decoration: none;
+}
+.contact-info__block-img {
+  width: 35px;
+  margin-right: 10px;
+}
 .intro {
   display: flex;
   justify-content: start;
