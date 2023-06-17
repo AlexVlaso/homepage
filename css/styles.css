@@ -35,8 +35,20 @@ body {
 
 .resume__block {
   border-bottom: 3px solid var(--border-color);
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   margin-bottom: 15px;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 @media screen and (max-width: 576px) {
