@@ -16,6 +16,9 @@ body {
   --text-decoration-color: #ff9a00;
   color: var(--secondary-text-color);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
   margin: 0 auto;
@@ -102,10 +105,10 @@ body {
   width: 80%;
 }
 .promo__btns {
-  max-width: 200px;
   margin: 0 auto;
+  width: 450px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .promo__btns-item {
   color: white;

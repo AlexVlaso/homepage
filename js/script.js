@@ -33,4 +33,17 @@ window.addEventListener("DOMContentLoaded", () => {
       setActiveContent(i);
     });
   });
+  //Scroll to center of element
+  const navBtns = document.querySelectorAll(".promo__btns-item");
+  navBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const id = btn.dataset.block;
+      document.getElementById(id).scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center",
+      });
+    });
+  });
 });
