@@ -40,10 +40,27 @@ window.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const id = btn.dataset.block;
       document.getElementById(id).scrollIntoView({
-        behavior: "auto",
+        behavior: "smooth",
         block: "center",
         inline: "center",
       });
+    });
+  });
+  //Scroll to top by arrow
+  const arrow = document.querySelector(".arrow__circle");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 1000) {
+      arrow.style.opacity = 1;
+      arrow.style.visibility = "visible";
+    } else {
+      arrow.style.opacity = 0;
+      arrow.style.visibility = "hidden";
+    }
+  });
+  arrow.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
   });
 });
