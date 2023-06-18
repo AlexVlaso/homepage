@@ -3,166 +3,588 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Résumé</title>
   </head>
   <body>
     <main>
       <div class="resume">
         <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Bulka</h1>
-            <h3 class="contact-info__sub-header">Senior Hooman Manager</h3>
-
-            <div class="contact_info_container fh">
-              <div class="contact-info__block">
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
-                    >
-                      <path
-                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>Lviv, Ukraine</span>
-                </a>
+          <div class="resume__block hidden" id="promo">
+            <div class="promo__block">
+              <img class="promo__avatar" src="assets/avatar.jpg" alt="Avatar" />
+              <div class="promo__desc">
+                <h1 class="promo__header">Alexandr Vlasov</h1>
+                <h2 class="promo__sub-header">Junior Frontend Developer</h2>
+                <div class="promo__btns">
+                  <a href="#" class="promo__btns-item" data-block="experience"
+                    >Experience</a
+                  >
+                  <a href="#" class="promo__btns-item" data-block="contacts"
+                    >Contacts</a
+                  >
+                  <a href="#" class="promo__btns-item" data-block="whoAmI"
+                    >About</a
+                  >
+                  <a href="#" class="promo__btns-item" data-block="timeline"
+                    >Timeline</a
+                  >
+                  <a href="#" class="promo__btns-item" data-block="skills"
+                    >Skills</a
+                  >
+                </div>
               </div>
-
-              <div class="contact-info__block contact-info__block--center">
-                <img
-                  class="contact-info__avatar"
-                  src="assets/avatar.jpeg"
-                  alt="Avatar"
-                />
-              </div>
-
+            </div>
+          </div>
+          <div class="resume__block hidden" id="contacts">
+            <h3 class="contact-info__header">Contacts</h3>
+            <div class="contact_info_container">
               <div class="contact-info__block">
-                <a
-                  href="https://ua.linkedin.com/company/binary-studio_241166"
-                  rel="author"
-                  class="contact-info__item"
-                >
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                      ></path>
-                    </svg>
+                <div class="contact-info__block-item">
+                  <img
+                    src="./assets/icons/phone-solid-24.png"
+                    alt="phone"
+                    class="contact-info__block-img"
+                  />
+                  <div class="contact-info__block-text">+380999478944</div>
+                </div>
+                <div class="contact-info__block-item">
+                  <img
+                    src="./assets/icons/instagram-alt-logo-24.png"
+                    alt="instagram"
+                    class="contact-info__block-img"
+                  />
+                  <a
+                    href="https://www.instagram.com/mr.alexvlas/"
+                    class="contact-info__block-text"
+                    >mr.alexvlas</a
+                  >
+                </div>
+                <div class="contact-info__block-item">
+                  <img
+                    src="./assets/icons/map-regular-24.png"
+                    alt="location"
+                    class="contact-info__block-img"
+                  />
+                  <div class="contact-info__block-text">Kharkiv</div>
+                </div>
+              </div>
+              <div class="contact-info__block">
+                <div class="contact-info__block-item">
+                  <img
+                    src="./assets/icons/envelope-regular-24.png"
+                    alt="mail"
+                    class="contact-info__block-img"
+                  />
+                  <div class="contact-info__block-text">
+                    alexvlas.javaprog@gmail.com
                   </div>
-                  <span>binary-studio</span>
-                </a>
+                </div>
+                <div class="contact-info__block-item">
+                  <img
+                    src="./assets/icons/github-logo-24.png"
+                    alt="github"
+                    class="contact-info__block-img"
+                  />
+                  <a
+                    href="https://github.com/AlexVlaso"
+                    class="contact-info__block-text"
+                  >
+                    AlexVlaso
+                  </a>
+                </div>
+                <div class="contact-info__block-item">
+                  <img
+                    src="./assets/icons/telegram-logo-24.png"
+                    alt="telegram"
+                    class="contact-info__block-img"
+                  />
+                  <a
+                    href="https://t.me/AlexVlas00"
+                    class="contact-info__block-text"
+                    >AlexVlas00</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="container">
-          <div class="resume__block">
+          <div class="resume__block hidden" id="whoAmI">
             <div class="intro">
-              <div class="intro__icon-wrapper">
-                <svg
-                  class="intro__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-                  ></path>
-                </svg>
+              <h3 class="intro__header">Who am I?</h3>
+              <div class="intro__wrapper">
+                <div class="intro__icon-wrapper">
+                  <svg
+                    class="intro__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                    ></path>
+                  </svg>
+                </div>
+                <p class="intro_text">
+                  I’m a plant protection specialist witch decided to change his
+                  life. During the last two years, I’ve learned programming and
+                  it was an amazing time of searching «How to center div?» or
+                  «What is this in JS?». By the way, I truly love it and will
+                  try to do my best to get a place in this academy.
+                </p>
               </div>
-              <p class="intro_text">
-                Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT,
-                Full Stack Evil, all I do is sleep and try to help out hoomans
-                with their projects whenever they need me.
-              </p>
             </div>
           </div>
         </div>
         <div class="container">
-          <div class="resume__block">
+          <div class="resume__block hidden" id="skills">
             <div class="skills">
               <h3 class="skills__header">Skills</h3>
-              <p class="skills__text">
-                Sleep, eat, more sleep, meow, mrrr, purr.
-              </p>
+              <h3 class="skills__subheader">Languages and Tools</h3>
+              <div class="skills__block">
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                    alt="html5"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                    alt="css3"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                    alt="javascript"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                    alt="typescript"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                    alt="react"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                    alt="redux"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://angular.io/assets/images/logos/angular/angular.svg"
+                    alt="angular"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                    alt="nodejs"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                    alt="aws"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg"
+                    alt="babel"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                    alt="bootstrap"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                    alt="figma"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                    alt="git"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="java"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                    alt="mysql"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                    alt="postgresql"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                    alt="postman"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <div class="skills__item hidden">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+                    alt="sass"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="container">
-          <div class="resume__block">
-            <div class="main-info fh">
-              <div class="experiences">
-                <h3 class="experiences__header">Experience</h3>
-                <div class="experiences__company">
-                  <div class="experiences__company-header">
-                    <span class="experiences__company-header-durability"
-                      >For whole my life</span
-                    >
-                    <h3 class="experiences__company-header-name">
-                      BinaryStudio
-                    </h3>
+          <div class="resume__block hidden" id="experience">
+            <h3 class="experience__header">Experience and Education</h3>
+            <div class="experience__wrapper">
+              <div class="experience__block">
+                <h3 class="experience__block-title">Education</h3>
+                <ul>
+                  <li>
+                    <div class="experience__item">
+                      <div class="experience__item-header">
+                        <div class="experience__item-img">
+                          <img
+                            src="./assets/icons/experience/courses.svg"
+                            alt="courses"
+                          />
+                        </div>
+                        <h4 class="experience__item-title">Udemy</h4>
+                        <div class="experience__item-subtitle">
+                          Web development courses
+                        </div>
+                      </div>
+                      <div class="experience__item-desc">
+                        During two last two years, I have finished around thirty
+                        courses. I started my education with Java courses, then
+                        SQL and frameworks, and after that, I built a full-stack
+                        shop website and started dipped learn front end part
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience__item">
+                      <div class="experience__item-header">
+                        <div class="experience__item-img">
+                          <img
+                            src="./assets/icons/experience/university.svg"
+                            alt="university"
+                          />
+                        </div>
+                        <h4 class="experience__item-title">
+                          State Biotechnological University
+                        </h4>
+                        <div class="experience__item-subtitle">
+                          Master's degree | Kharkiv
+                        </div>
+                      </div>
+                      <div class="experience__item-desc">
+                        I was a student at State Biotechnological University
+                        from 2017 to 2022. The agricultural sphere wasn’t my cup
+                        of tea. By the way, I finished my education at this
+                        university and got an honors diploma.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="experience__block">
+                <h3 class="experience__block-title">Experience</h3>
+                <ul>
+                  <li>
+                    <div class="experience__item">
+                      <div class="experience__item-header">
+                        <div class="experience__item-img">
+                          <img
+                            src="./assets/icons/experience/designer.svg"
+                            alt="designer"
+                          />
+                        </div>
+                        <h4 class="experience__item-title">Agronomist</h4>
+                        <div class="experience__item-subtitle">
+                          Berries farm | Kharkiv
+                        </div>
+                      </div>
+                      <div class="experience__item-desc">
+                        It was a typical job for an agronomist. I had a small
+                        team whose work I had to supervise. It was my job to
+                        draw up a work plan for my team and to do seasonal field
+                        work.
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="experience__item">
+                      <div class="experience__item-header">
+                        <div class="experience__item-img">
+                          <img
+                            src="./assets/icons/experience/developer.svg"
+                            alt="developer"
+                          />
+                        </div>
+                        <h4 class="experience__item-title">
+                          Plant protection specialist
+                        </h4>
+                        <div class="experience__item-subtitle">
+                          Saterplant | Scharrel, Germany (02.2020-07.2020)
+                        </div>
+                      </div>
+                      <div class="experience__item-desc">
+                        It was an internship in Europe from my university. I had
+                        to help with plant protection and other types of work
+                        for this company. For me personally it was great
+                        practice for my spoken English.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block hidden" id="timeline">
+            <div class="timeline">
+              <h3 class="timeline__header">Timeline</h3>
+              <ul class="timeline__labels">
+                <li class="timeline__label timeline__label_active">2000</li>
+                <li class="timeline__label">2006</li>
+                <li class="timeline__label">2008</li>
+                <li class="timeline__label">2010</li>
+                <li class="timeline__label">2015</li>
+                <li class="timeline__label">2016</li>
+                <li class="timeline__label">2017</li>
+                <li class="timeline__label">2020</li>
+                <li class="timeline__label">2022</li>
+                <li class="timeline__label">2023</li>
+              </ul>
+              <div class="timeline__contents">
+                <div class="timeline__content timeline__content_active">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I was born (It can be considered a success)</li>
+                      <li>I made the first step</li>
+                      <li>I said the first word</li>
+                    </ul>
                   </div>
-
-                  <div class="experiences__company-project">
-                    <span class="experiences__company-project-role"
-                      >Binary Studio Cat</span
-                    >
-                    <h3 class="experiences__company-project-name">
-                      Hooman project
-                    </h3>
-                    <ul class="experiences__company-project-responsibilities">
-                      <li>Supported hoomans</li>
-                      <li>Slept all the time</li>
-                      <li>Lied on the keyboard</li>
-                      <li>Watched my hoomans working</li>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>Realized the complexity of life :)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I have started at my school</li>
+                      <li>First day off (I got that amazing feeling)</li>
+                      <li>
+                        First summer vacation (it was even better that day off)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>
+                        I realized that I would spend the next eleven years at
+                        this school
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I won the school athletics competition</li>
+                      <li>First trip to the sea</li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I got my first computer</li>
+                      <li>
+                        I got a brother (but I was more excited about the
+                        computer)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>I realized how loud little kids can be</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I won second place in the physics Olympiad</li>
+                      <li>I passed all my exams in school</li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>I won just Second place in the physics Olympiad</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I transferred to another school</li>
+                      <li>I found real school friends</li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>I lost my chance to get a gold medal</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>First date</li>
+                      <li>First relationship</li>
+                      <li>Graduation</li>
+                      <li>I passed university entrance exams</li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>First trip abroad</li>
+                      <li>I got my first job in Germany</li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>Coronavirus started</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I got an internship in Germany</li>
+                      <li>
+                        I decided to change my life and become a programmer
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>War started</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline__content">
+                  <div class="timeline__content-positive">
+                    <h4>Positive events</h4>
+                    <ul>
+                      <li>I'm still trying to become a programmer :)</li>
+                      <li>
+                        I passed the first selection to Binary Studio Academy
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="timeline__content-negative">
+                    <h4>Negative events</h4>
+                    <ul>
+                      <li>War is going</li>
                     </ul>
                   </div>
                 </div>
               </div>
-
-              <div class="additional-info fv">
-                <div class="additional-info fv">
-                  <div class="additional-info__education">
-                    <h3 class="additional-info__education-header">Education</h3>
-                    <div class="additional-info__education-university">
-                      <span
-                        class="additional-info__education-university-durability"
-                        >2021</span
-                      >
-                      <h3
-                        class="additional-info__education-university-speciality"
-                      >
-                        Cat track
-                      </h3>
-                      <p class="additional-info__education-university-name">
-                        Binary Studio Academy
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="additional-info__languages">
-                    <h3 class="additional-info__languages-header">Languages</h3>
-                    <p class="additional-info__languages-item">Meow dialect</p>
-                    <p class="additional-info__languages-item">
-                      Ukrainian (understand)
-                    </p>
-                    <p class="additional-info__languages-item">
-                      English (don't understand)
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+        <div class="arrow__circle">
+          <img src="./assets/icons/chevrons-up-regular-24.png" alt="arrow" />
+        </div>
       </div>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
